@@ -1,0 +1,61 @@
+.SignupScreen{
+    max-width: 300px;
+    margin-top: -70px;
+    padding: 70px;
+    margin-left:auto ;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, 0.70);
+
+}
+.SignupScreen >form{
+
+    display: grid;
+    flex-direction: column;
+    
+}
+.SignupScreen>form >h1{
+    font-size: 30px;
+    text-align: left;
+    padding: 12px;
+}
+.SignupScreen >form input{
+    outline-width:0 ;
+    background-color: rgb(61, 61, 61);
+    height: 40px;
+    border: none;
+    color: white;
+    margin-bottom:14px ;
+    border-radius: 5px;
+
+
+}
+.SignupScreen >form>button{
+    padding: 16px 20px;
+  color: white;
+background-color: #e50914;
+border: none;
+cursor: pointer;
+border-radius: 5px;
+font-weight: 700;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.SignupScreen >p{
+    text-align: left;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   margin-top: 70px;
+  
+}
+.SignupScreen__gray{
+    color: gray;
+    position: relative;
+    margin-left: 0;
+    font-size: 11px;
+}
+.SignupScreen__link{
+    font-size: 11px;
+}
+.SignupScreen__link:hover{
+    color: white;
+   cursor: pointer;
+    text-decoration: underline;
+}

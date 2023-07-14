@@ -1,0 +1,65 @@
+[debug] [2023-07-14T06:03:45.323Z] ----------------------------------------------------------------------
+[debug] [2023-07-14T06:03:45.325Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-07-14T06:03:45.326Z] CLI Version:   10.0.1
+[debug] [2023-07-14T06:03:45.326Z] Platform:      win32
+[debug] [2023-07-14T06:03:45.327Z] Node Version:  v18.15.0
+[debug] [2023-07-14T06:03:45.328Z] Time:          Fri Jul 14 2023 11:33:45 GMT+0530 (India Standard Time)
+[debug] [2023-07-14T06:03:45.328Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-14T06:03:45.388Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-14T06:03:45.389Z] > authorizing via signed-in user (neerajkumarsharma013@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Admin\OneDrive\Desktop\my-appcd
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-07-14T06:04:21.848Z] Using project from CLI flag: netflix-clone-b2c47
+[debug] [2023-07-14T06:04:21.851Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/netflix-clone-b2c47 [none]
+[debug] [2023-07-14T06:04:22.398Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/netflix-clone-b2c47 200
+[debug] [2023-07-14T06:04:22.399Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/netflix-clone-b2c47 {"projectId":"netflix-clone-b2c47","projectNumber":"387571347538","displayName":"netflix-clone","name":"projects/netflix-clone-b2c47","resources":{"hostingSite":"netflix-clone-b2c47"},"state":"ACTIVE","etag":"1_bcdf5d69-d09a-4792-a222-86f99bed3d71"}
+[info] i  Using project netflix-clone-b2c47 (netflix-clone) 
+[info] 
+=== Hosting:github Setup
+[info] 
+[info] i  Detected a .git folder at C:\Users\Admin\OneDrive\Desktop\my-appcd 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=55016672&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2023-07-14T06:04:22.994Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"6ebd6a198a848c00df8e","redirect_uri":"http://localhost:9005","state":"55016672"}
+[debug] [2023-07-14T06:04:23.493Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Fri, 14 Jul 2023 06:04:22 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","vary":"X-PJAX, X-PJAX-Container, Turbo-Visit, Turbo-Frame, Accept-Encoding, Accept, X-Requested-With","etag":"W/\"f71f1650baa21cbc0a684bb4df07a3a2\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"0","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; child-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com objects-origin.githubusercontent.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events *.actions.githubusercontent.com productionresultssa0.blob.core.windows.net/ productionresultssa1.blob.core.windows.net/ productionresultssa2.blob.core.windows.net/ productionresultssa3.blob.core.windows.net/ productionresultssa4.blob.core.windows.net/ wss://*.actions.githubusercontent.com github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: github.githubassets.com media.githubusercontent.com camo.githubusercontent.com identicons.github.com avatars.githubusercontent.com github-cloud.s3.amazonaws.com objects.githubusercontent.com objects-origin.githubusercontent.com secured-user-images.githubusercontent.com/ user-images.githubusercontent.com/ private-user-images.githubusercontent.com opengraph.githubassets.com github-production-user-asset-6210df.s3.amazonaws.com customer-stories-feed.github.com spotlights-feed.github.com *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com/ secured-user-images.githubusercontent.com/ private-user-images.githubusercontent.com; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/","x-github-request-id":"DCCC:1DF5F:52780F:5E47BF:64B0E565"}
+[debug] [2023-07-14T06:04:23.499Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2023-07-14T06:04:23.954Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2023-07-14T06:04:23.954Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"Neerajupadhyay143","id":116946363,"node_id":"U_kgDOBvh1uw","avatar_url":"https://avatars.githubusercontent.com/u/116946363?v=4","gravatar_id":"","url":"https://api.github.com/users/Neerajupadhyay143","html_url":"https://github.com/Neerajupadhyay143","followers_url":"https://api.github.com/users/Neerajupadhyay143/followers","following_url":"https://api.github.com/users/Neerajupadhyay143/following{/other_user}","gists_url":"https://api.github.com/users/Neerajupadhyay143/gists{/gist_id}","starred_url":"https://api.github.com/users/Neerajupadhyay143/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Neerajupadhyay143/subscriptions","organizations_url":"https://api.github.com/users/Neerajupadhyay143/orgs","repos_url":"https://api.github.com/users/Neerajupadhyay143/repos","events_url":"https://api.github.com/users/Neerajupadhyay143/events{/privacy}","received_events_url":"https://api.github.com/users/Neerajupadhyay143/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":3,"public_gists":0,"followers":0,"following":0,"created_at":"2022-10-29T08:51:56Z","updated_at":"2023-07-13T16:40:04Z","private_gists":0,"total_private_repos":1,"owned_private_repos":1,"disk_usage":8750,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as Neerajupadhyay143 
+[info] 
+[debug] [2023-07-14T06:04:44.957Z] >>> [apiv2][query] GET https://api.github.com/repos/y/actions/secrets/public-key type=owner
+[debug] [2023-07-14T06:04:45.351Z] <<< [apiv2][status] GET https://api.github.com/repos/y/actions/secrets/public-key 404
+[debug] [2023-07-14T06:04:45.351Z] <<< [apiv2][body] GET https://api.github.com/repos/y/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-07-14T06:05:11.945Z] >>> [apiv2][query] GET https://api.github.com/repos/repository/actions/secrets/public-key type=owner
+[debug] [2023-07-14T06:05:12.340Z] <<< [apiv2][status] GET https://api.github.com/repos/repository/actions/secrets/public-key 404
+[debug] [2023-07-14T06:05:12.340Z] <<< [apiv2][body] GET https://api.github.com/repos/repository/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-07-14T06:06:08.826Z] >>> [apiv2][query] GET https://api.github.com/repos/netflix-clone-2.0/actions/secrets/public-key type=owner
+[debug] [2023-07-14T06:06:09.372Z] <<< [apiv2][status] GET https://api.github.com/repos/netflix-clone-2.0/actions/secrets/public-key 404
+[debug] [2023-07-14T06:06:09.372Z] <<< [apiv2][body] GET https://api.github.com/repos/netflix-clone-2.0/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}

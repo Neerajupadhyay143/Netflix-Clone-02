@@ -1,16 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import Row from "./Row";
 import "./Row.css";
 import requests from "./requests";
 import NavBar from "./NavBar";
 import Banner from "./Banner";
+import LoginScreen from "./LoginScreen";
+import SignupScreen from "./SignupScreen";
 
 function App() {
+
+  const[token,setToken]=useState(null);
+
+
+  const logoutEvent=()=>{
+
+    (token ==null)?(
+      <SignupScreen token={token} setToken={setToken}/>
+    ):(
+     setToken(null)
+    )
+//   }
+  }
+  console.log(logoutEvent)
+  
+  
   return (
     <>
       <div className="app">
-        <NavBar />
+        {token=== null?(
+          <LoginScreen token={token} setToken={setToken} />
+        ):(<>
+         <NavBar logoutEvent={()=>{logoutEvent()}} />
         <Banner />
         <Row
           title="NETFLIX ORIGINAL"
@@ -24,6 +45,9 @@ function App() {
         <Row title=" Horror Movies" fetchUrl={requests.fetchHorrorMovies} />
         <Row title="Romance Movies" fetchUrl={requests.fetchRomanceMovies} />
         <Row title="Documentaries" fetchUrl={requests.fetchDocumentaries} />
+       </> )
+        }
+       
       </div>
     </>
   );
